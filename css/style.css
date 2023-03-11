@@ -1,0 +1,289 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --first-background-color: #ffeed9;
+  --secondary-background-color: #ffe5cc;
+  --text-color: #594f43;
+  --text-font-family: "Work Sans", sans-serif;
+  --heading-font-family: "Eczar", serif;
+  --heading-text-color: #403930;
+  --primary-color: #4e5e80;
+}
+body {
+  background-color: var(--first-background-color);
+}
+.navbar-nav .nav-link,
+.hello-box,
+.home-page h1,
+.home-page h2,
+.project-box h3,
+.project-box p,
+.button-box .work-btn,
+.button-box .contact-btn,
+.project-link {
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.3rem;
+  color: var(--text-color);
+  font-family: var(--text-font-family);
+}
+.navbar-brand {
+  color: var(--heading-text-color);
+}
+.navbar-box {
+  background-color: var(--first-background-color);
+  box-shadow: 0 0 5px #ecd9c6;
+}
+.hello-box {
+  font-size: 2rem;
+  padding: 0.2em 0.8em;
+  color: var(--heading-text-color);
+  font-family: var(--text-font-family);
+  align-items: center;
+  background: #ffddbf;
+  border-radius: 10px;
+}
+.home-page {
+  margin-top: 3em;
+}
+.home-page h1 {
+  font-size: 3rem;
+  margin-top: 0.5em;
+  font-family: var(--heading-font-family);
+  line-height: 125%;
+  letter-spacing: 0.02em;
+  color: var(--heading-text-color);
+}
+.home-page h2 {
+  font-size: 2rem;
+  margin-top: 2.3em;
+  font-family: var(--heading-font-family);
+  line-height: 125%;
+  letter-spacing: 0.02em;
+  color: var(--heading-text-color);
+}
+
+.project-box h3 {
+  font-size: 2rem;
+
+  color: var(--heading-text-color);
+  font-family: var(--heading-font-family);
+}
+.project-box p {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  font-family: "Work Sans";
+  font-weight: 500;
+  font-family: var(--text-font-family);
+}
+.button-box {
+  margin-top: 2em;
+}
+.button-box button {
+  font-size: 1rem;
+  padding: 1.3em 4.5em;
+  border: none;
+  cursor: pointer;
+  transition: all 250ms ease-in-out;
+}
+.button-box .work-btn {
+  background: var(--primary-color);
+  border-radius: 16px;
+  font-family: var(--text-font-family);
+  color: #f3f2ff;
+}
+.button-box .work-btn:hover {
+  background: #455370;
+}
+.button-box .contact-btn {
+  margin-left: 1em;
+  font-family: var(--text-font-family);
+  color: #4d5566;
+  box-sizing: border-box;
+  align-items: center;
+  border: 2px solid #4d5566;
+  background-color: #f3f2ff;
+  border-radius: 16px;
+}
+.button-box .contact-btn:hover {
+  background-color: #e0e0eb;
+  color: #323d53;
+}
+.arrow {
+  padding-left: 1em;
+}
+
+.project-box {
+  padding: 2em 3em;
+  background-color: #fff9f2;
+  border-radius: 24px;
+}
+
+.project-link {
+  font-size: 1.5rem;
+  font-family: var(--text-font-family);
+  color: var(--primary-color);
+  text-decoration: none;
+}
+.github,
+.linkedin,
+.instagram {
+  font-size: 3rem;
+  text-decoration: none;
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: all 250ms ease-in-out;
+}
+.github:hover {
+  color: #171515;
+}
+.linkedin:hover {
+  color: #0072b1;
+}
+.instagram:hover {
+  color: #e4405f;
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .home-page {
+    margin-top: 5em;
+  }
+  .home-page h1 {
+    font-size: 2.7rem;
+    margin-top: 0.7em;
+  }
+  .project-box p {
+    font-size: 1.3rem;
+  }
+  .button-box button {
+    font-size: 1rem;
+    padding: 1em 2.5em;
+  }
+  .project-box {
+    padding: 2em 2em;
+  }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  .home-page {
+    margin-top: 5em;
+  }
+  .home-page h1 {
+    font-size: 2rem;
+    margin-top: 0.7em;
+  }
+  .project-box p {
+    font-size: 1.2rem;
+  }
+  .button-box button {
+    font-size: 1rem;
+    padding: 1em 1.4em;
+  }
+  .project-box {
+    padding: 2em 2em;
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  .navbar-nav .nav-link {
+    font-size: 1rem;
+  }
+  .hello-box {
+    font-size: 1.5rem;
+  }
+  .home-page {
+    margin-top: 5em;
+  }
+  .home-page h1 {
+    font-size: 1.5rem;
+    margin-top: 0.5em;
+  }
+  .home-page h2 {
+    font-size: 1.5rem;
+    /* margin-top: 2.3em; */
+  }
+  .project-box h3 {
+    font-size: 1.5rem;
+  }
+  .project-box p {
+    font-size: 1rem;
+  }
+  .button-box {
+    margin-top: 0.5em;
+  }
+  .button-box button {
+    font-size: 0.7rem;
+    padding: 1em 1.1em;
+  }
+  .project-box {
+    padding: 2em 1em;
+  }
+  .project-link {
+    font-size: 1.1rem;
+  }
+  .github,
+  .linkedin,
+  .instagram {
+    font-size: 2.5rem;
+  }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+  .navbar-nav .nav-link {
+    font-size: 1rem;
+  }
+  .hello-box {
+    font-size: 1.4rem;
+    margin-right: 2em;
+  }
+
+  .home-page {
+    margin-top: 4em;
+  }
+  .home-page h1 {
+    font-size: 1.5rem;
+    margin-top: 0.5em;
+  }
+  .home-page h2 {
+    font-size: 1.5rem;
+    margin-top: 1.5em;
+  }
+  .project-box h3 {
+    font-size: 1.5rem;
+  }
+  .project-box p {
+    font-size: 1rem;
+  }
+  .button-box {
+    margin-top: 0.5em;
+  }
+  .button-box button {
+    font-size: 0.7rem;
+    padding: 1em 1.4em;
+  }
+  .project-box {
+    padding: 2em 1em;
+  }
+  .project-link {
+    font-size: 1.1rem;
+  }
+  .home-page {
+    padding: 0 2em;
+  }
+  .github,
+  .linkedin,
+  .instagram {
+    font-size: 2rem;
+  }
+}
