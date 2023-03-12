@@ -21,6 +21,8 @@ body {
 .home-page h2,
 .project-box h3,
 .project-box p,
+.about-text-box p,
+.about-text-box span,
 .button-box .work-btn,
 .button-box .contact-btn,
 .project-link {
@@ -37,8 +39,12 @@ body {
 .navbar-brand {
   color: var(--heading-text-color);
 }
-.navbar-box {
+.navbar-box-home {
   background-color: var(--first-background-color);
+  box-shadow: 0 0 5px #ecd9c6;
+}
+.navbar-box-about {
+  background-color: var(--secondary-background-color);
   box-shadow: 0 0 5px #ecd9c6;
 }
 .hello-box {
@@ -72,17 +78,23 @@ body {
 
 .project-box h3 {
   font-size: 2rem;
-
   color: var(--heading-text-color);
   font-family: var(--heading-font-family);
 }
-.project-box p {
+.project-box p,
+.about-text-box p,
+.about-text-box span {
   font-size: 1.5rem;
   color: var(--text-color);
   font-family: "Work Sans";
   font-weight: 500;
   font-family: var(--text-font-family);
 }
+
+.about-body {
+  background-color: var(--secondary-background-color);
+}
+
 .button-box {
   margin-top: 2em;
 }
@@ -160,7 +172,9 @@ body {
     font-size: 2.7rem;
     margin-top: 0.7em;
   }
-  .project-box p {
+  .project-box p,
+  .about-text-box p,
+  .about-text-box span {
     font-size: 1.3rem;
   }
   .button-box button {
@@ -181,7 +195,9 @@ body {
     font-size: 2rem;
     margin-top: 0.7em;
   }
-  .project-box p {
+  .project-box p,
+  .about-text-box p,
+  .about-text-box span {
     font-size: 1.2rem;
   }
   .button-box button {
@@ -215,7 +231,9 @@ body {
   .project-box h3 {
     font-size: 1.5rem;
   }
-  .project-box p {
+  .project-box p,
+  .about-text-box p,
+  .about-text-box span {
     font-size: 1rem;
   }
   .button-box {
@@ -262,7 +280,9 @@ body {
   .project-box h3 {
     font-size: 1.5rem;
   }
-  .project-box p {
+  .project-box p,
+  .about-text-box p,
+  .about-text-box span {
     font-size: 1rem;
   }
   .button-box {
