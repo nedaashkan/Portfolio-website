@@ -99,12 +99,39 @@ body {
   font-weight: 500;
   font-family: var(--text-font-family);
 }
-.s-tool-box {
-  padding: 1em 0;
+.s-tool-box span {
+  font-size: 1rem;
   /* add new yoho */
+  font-family: "Patrick Hand", cursive;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: 0.02em;
+  color: #594f43;
+  padding: 0.5em 0;
+}
+
+.s-box {
+  padding: 0.5em 0;
+  /* add new yoho */
+  display: flex;
+  justify-content: space-around;
   background: #fff8f2;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 15px;
+  border-radius: 5px;
+}
+.s-box img {
+  max-width: 25%;
+}
+.s-box span {
+  font-size: 1.3rem;
+  /* add new yoho */
+  font-family: "Patrick Hand";
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #594f43;
+  padding: 0;
 }
 .tool-box {
   padding: 1em 0;
@@ -196,35 +223,70 @@ body {
 .arrow {
   padding-left: 1em;
 }
-
+.tool-box-img {
+  max-width: 50%;
+}
 .project-box {
-  padding: 2em 3em;
+  /* add new yoho */
+  padding: 2em;
   background-color: #fff9f2;
   border-radius: 24px;
 }
+.social-media-box {
+  margin-top: 2em;
+}
+.social-media-box h2 {
+  margin: 0;
+  margin-top: 1em;
+}
+.social-media-box span {
+  font-size: 2rem;
+  /* add new yoho */
+  margin-bottom: 0.9em;
+  font-family: "Patrick Hand", cursive;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: 0.02em;
+  color: #594f43;
+}
 
 .project-link {
-  font-size: 1.5rem;
-  font-family: var(--text-font-family);
-  color: var(--primary-color);
+  font-size: 1.1rem;
+  padding: 1em 1.5em;
+  /* add new yoho */
+  background: #4e5e80;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
   text-decoration: none;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  color: #fff8f2;
+}
+.project-link-box {
+  margin-top: 2em;
+  /* add new yoho */
+}
+.social-link{
+  tex
 }
 .github,
 .linkedin,
 .instagram {
   font-size: 3rem;
   text-decoration: none;
-  color: var(--primary-color);
   cursor: pointer;
   transition: all 250ms ease-in-out;
 }
-.github:hover {
+.github {
   color: #171515;
 }
-.linkedin:hover {
+.linkedin {
   color: #0072b1;
 }
-.instagram:hover {
+.instagram {
   color: #e4405f;
 }
 
