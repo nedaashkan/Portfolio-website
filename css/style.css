@@ -36,8 +36,12 @@ body {
   color: var(--text-color);
   font-family: var(--text-font-family);
 }
-.navbar-nav .nav-item {
+.navbar-box-home .nav-item {
   border-bottom: 3px solid var(--first-background-color);
+  transition: all 250ms ease-in-out;
+}
+.navbar-box-about .nav-item {
+  border-bottom: 3px solid var(--secondary-background-color);
   transition: all 250ms ease-in-out;
 }
 .navbar-nav .nav-item:hover {
@@ -294,8 +298,36 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   cursor: pointer;
-
+  background: #fff8f2;
 }
+.about-contact-box {
+  /* add new yoho */
+  margin: 3.5rem 0;
+}
+.about-contact-box .row {
+  /* add new yoho */
+  margin-top: 1.5em;
+}
+.about-contact-box .title {
+  text-align: center;
+  font-size: 2rem;
+  /* add new yoho */
+  font-family: "Patrick Hand", cursive;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: 0.02em;
+  color: #594f43;
+}
+
+.about-contact-box h2 {
+  font-size: 4rem;
+  /* add new yoho */
+  margin: 0;
+  margin: 0.5em 0;
+  text-align: center;
+}
+
 .github,
 .linkedin,
 .instagram,
