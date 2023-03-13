@@ -36,6 +36,13 @@ body {
   color: var(--text-color);
   font-family: var(--text-font-family);
 }
+.navbar-nav .nav-item {
+  border-bottom: 3px solid var(--first-background-color);
+}
+.navbar-nav .nav-item:hover {
+  border-bottom: 3px solid #ffa8b0;
+  cursor: pointer;
+}
 .navbar-brand {
   color: var(--heading-text-color);
 }
@@ -55,6 +62,7 @@ body {
   align-items: center;
   background: #ffddbf;
   border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .home-page {
   margin-top: 3em;
@@ -81,7 +89,7 @@ body {
   color: var(--heading-text-color);
   font-family: var(--heading-font-family);
 }
-.project-box p,
+.home-page p,
 .about-text-box p,
 .about-text-box span {
   font-size: 1.5rem;
@@ -89,6 +97,30 @@ body {
   font-family: "Work Sans";
   font-weight: 500;
   font-family: var(--text-font-family);
+}
+.tool-box {
+  background: #fff8f2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+.skill-tool-box {
+  margin-top: 4.5em;
+  /* add new yoho */
+}
+.skill-tool-box h2 {
+  margin-top: 0;
+  /* add new yoho */
+}
+.skill-tool-box .title {
+  margin-bottom: 0.9em;
+  font-size: 2rem;
+  /* add new yoho */
+  font-family: "Patrick Hand", cursive;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: 0.02em;
+  color: #594f43;
 }
 
 .about-body {
@@ -104,6 +136,7 @@ body {
   border: none;
   cursor: pointer;
   transition: all 250ms ease-in-out;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .button-box .work-btn {
   background: var(--primary-color);
