@@ -308,8 +308,8 @@ body {
   margin-top: 1.5em;
 }
 .about-contact-box .title {
-  text-align: center;
   font-size: 2rem;
+  text-align: center;
   /* add new yoho */
   font-family: "Patrick Hand", cursive;
   font-style: normal;
@@ -430,6 +430,19 @@ body {
   .social-media-box .row {
     margin-top: 1em;
   }
+  .about-contact-box {
+    margin-top: 1em;
+  }
+  .about-contact-box h2 {
+    font-size: 2.2rem;
+    margin-top: 1em;
+  }
+  .about-contact-box .title {
+    font-size: 2rem;
+  }
+  .about-contact-box .row {
+    margin-top: 1em;
+  }
 }
 
 /* Portrait tablets and small desktops */
@@ -501,6 +514,20 @@ body {
   .instagram,
   .gmail {
     font-size: 2rem;
+  }
+
+  .about-contact-box {
+    margin-top: 1em;
+  }
+  .about-contact-box h2 {
+    font-size: 2.2rem;
+    margin-top: 1em;
+  }
+  .about-contact-box .title {
+    font-size: 2rem;
+  }
+  .about-contact-box .row {
+    margin-top: 1em;
   }
 }
 
@@ -586,6 +613,20 @@ body {
     margin-top: 5em;
   }
   .social-media-box .row {
+    margin-top: 1em;
+  }
+
+  .about-contact-box {
+    margin-top: 1em;
+  }
+  .about-contact-box h2 {
+    font-size: 1.5rem;
+    margin-top: 1em;
+  }
+  .about-contact-box .title {
+    font-size: 1.5rem;
+  }
+  .about-contact-box .row {
     margin-top: 1em;
   }
 }
@@ -679,5 +720,23 @@ body {
   .instagram,
   .gmail {
     font-size: 1.5rem;
+  }
+  .about-page {
+    padding: 0 2.1em;
+  }
+  .about-page h1 {
+    margin-right: 2rem;
+  }
+  .about-contact-box {
+    margin-top: 1em;
+  }
+  .about-contact-box h2 {
+    font-size: 1.5rem;
+  }
+  .about-contact-box .title {
+    font-size: 1.5rem;
+  }
+  .about-contact-box .row {
+    margin-top: 1em;
   }
 }
