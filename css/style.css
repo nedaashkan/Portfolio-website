@@ -8,21 +8,24 @@
   --secondary-background-color: #ffe5cc;
   --text-color: #594f43;
   --text-font-family: "Work Sans", sans-serif;
-  --heading-font-family: "Eczar", serif;
   --heading-text-color: #403930;
+  --heading-font-family: "Eczar", serif;
+  --title-font-family: "Patrick Hand", cursive;
   --primary-color: #4e5e80;
 }
 body {
   background-color: var(--first-background-color);
 }
+.about-body {
+  background-color: var(--secondary-background-color);
+}
+
 .navbar-nav .nav-link,
 .hello-box,
 .home-page h1,
 .home-page h2,
-.project-box h3,
-.project-box p,
-.about-text-box p,
-.about-text-box span,
+.home-page h3,
+.home-page p,
 .button-box .work-btn,
 .button-box .contact-btn,
 .project-link {
@@ -89,104 +92,17 @@ body {
   color: var(--heading-text-color);
 }
 
-.project-box h3 {
+.home-page h3 {
   font-size: 2rem;
   color: var(--heading-text-color);
   font-family: var(--heading-font-family);
 }
-.home-page p,
-.about-text-box p,
-.about-text-box span {
+.home-page p {
   font-size: 1.5rem;
   color: var(--text-color);
   font-family: "Work Sans";
   font-weight: 500;
   font-family: var(--text-font-family);
-}
-.s-tool-box span {
-  font-size: 1rem;
-  /* add new yoho */
-  font-family: "Patrick Hand", cursive;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 125%;
-  letter-spacing: 0.02em;
-  color: #594f43;
-  padding: 0.5em 0;
-}
-
-.s-box {
-  padding: 0.5em 0;
-  /* add new yoho */
-  display: flex;
-  justify-content: space-around;
-  background: #fff8f2;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 5px;
-}
-.s-box img {
-  max-width: 25%;
-}
-.s-box span {
-  font-size: 1.3rem;
-  /* add new yoho */
-  font-family: "Patrick Hand";
-  font-style: normal;
-  font-weight: 400;
-  letter-spacing: 0.02em;
-  color: #594f43;
-  padding: 0;
-}
-.tool-box {
-  padding: 1em 0;
-  /* add new yoho */
-  background: #fff8f2;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 15px;
-}
-.tool-box .tool-box-img {
-  margin: 0 auto;
-  display: block;
-}
-.tool-box .tool-box-text {
-  font-size: 1.5rem;
-  /* add new yoho */
-  font-family: "Patrick Hand", cursive;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 125%;
-  letter-spacing: 0.02em;
-  color: #594f43;
-  text-align: center;
-  padding: 0.5em 0;
-}
-.skill-tool-box {
-  margin-top: 4.5em;
-  /* add new yoho */
-}
-.skill-tool-box h2 {
-  margin-top: 0;
-  margin-bottom: 0.5em;
-  /* add new yoho */
-}
-
-.skill-tool-box .title {
-  font-size: 2rem;
-  /* add new yoho */
-  margin-bottom: 0.9em;
-  font-family: "Patrick Hand", cursive;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 125%;
-  letter-spacing: 0.02em;
-  color: #594f43;
-}
-.tool-box-row {
-  margin-top: 2em;
-  /* add new yoho */
-}
-.about-body {
-  background-color: var(--secondary-background-color);
 }
 
 .button-box {
@@ -195,15 +111,15 @@ body {
 }
 .button-box button {
   font-size: 1rem;
-  padding: 1.3em 4.5em;
+  padding: 1.3em 4em;
   border: none;
   cursor: pointer;
+  border-radius: 5px;
   transition: all 250ms ease-in-out;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .button-box .work-btn {
   background: var(--primary-color);
-  border-radius: 16px;
   font-family: var(--text-font-family);
   color: #f3f2ff;
 }
@@ -218,7 +134,6 @@ body {
   align-items: center;
   border: 2px solid #4d5566;
   background-color: #f3f2ff;
-  border-radius: 16px;
 }
 .button-box .contact-btn:hover {
   background-color: #e0e0eb;
@@ -227,8 +142,82 @@ body {
 .arrow {
   padding-left: 1em;
 }
-.tool-box-img {
+.dot {
+  visibility: hidden;
+}
+.b-tool-box-skill {
+  margin-top: 4.5em;
+  /* add new yoho */
+}
+
+.b-tool-box-skill h2 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  /* add new yoho */
+}
+
+.b-tool-box-skill div {
+  font-size: 2rem;
+  margin-bottom: 0.9em;
+  font-family: "Patrick Hand", cursive;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: 0.02em;
+  color: #594f43;
+}
+.b-tool-box-row {
+  margin-top: 2em;
+}
+.b-tool-box-row .col-4 {
+  margin-top: 1em;
+}
+.b-tool-box {
+  padding: 1em 0;
+  /* add new yoho */
+  background: #fff8f2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+
+.b-tool-box img {
   max-width: 50%;
+  margin: 0 auto;
+  display: block;
+}
+.b-tool-box div {
+  font-size: 1.5rem;
+  /* add new yoho */
+  font-family: "Patrick Hand", cursive;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: 0.02em;
+  color: #594f43;
+  text-align: center;
+  padding: 0.5em 0;
+}
+
+.s-tool-box {
+  padding: 0.5em 0;
+  /* add new yoho */
+  display: flex;
+  justify-content: space-around;
+  background: #fff8f2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+.s-tool-box img {
+  max-width: 25%;
+}
+.s-tool-box span {
+  font-size: 1.3rem;
+  /* add new yoho */
+  font-family: "Patrick Hand";
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #594f43;
 }
 .project-box {
   /* add new yoho */
@@ -236,6 +225,33 @@ body {
   background-color: #fff9f2;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 24px;
+}
+.project-link-box {
+  margin-top: 2em;
+  /* add new yoho */
+}
+.project-link-button {
+  padding: 1em 1.5em;
+  /* add new yoho */
+  background: #4e5e80;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+.project-link {
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  text-decoration: none;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  color: #fff8f2;
+}
+.project-link-button a {
+  text-decoration: none;
 }
 .social-media-box {
   /* add new yoho */
@@ -261,34 +277,6 @@ body {
   color: #594f43;
 }
 
-.project-link {
-  font-size: 1.1rem;
-  padding: 1em 1.5em;
-  /* add new yoho */
-  background: #4e5e80;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 5px;
-  text-decoration: none;
-  font-family: "Work Sans";
-  font-style: normal;
-  font-weight: 600;
-  line-height: 150%;
-  color: #fff8f2;
-}
-.project-link-box {
-  margin-top: 2em;
-  /* add new yoho */
-}
-.social-link {
-  font-size: 1.2rem;
-  /* add new yoho */
-  text-decoration: none;
-  font-family: "Work Sans";
-  font-style: normal;
-  font-weight: 600;
-  line-height: 150%;
-  color: #594f43;
-}
 .social-box {
   padding: 0.5em 0;
   /* add new yoho */
@@ -300,6 +288,17 @@ body {
   cursor: pointer;
   background: #fff8f2;
 }
+.social-link {
+  font-size: 1.2rem;
+  /* add new yoho */
+  text-decoration: none;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  color: #594f43;
+}
+
 .about-contact-box {
   /* add new yoho */
   margin: 3.5rem 0;
@@ -321,7 +320,7 @@ body {
 }
 
 .about-contact-box h2 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   /* add new yoho */
   margin: 0;
   margin: 0.5em 0;
@@ -351,47 +350,157 @@ body {
 }
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
+  .navbar-nav .nav-link {
+    font-size: 1.3rem;
+  }
   .home-page {
     margin-top: 5em;
+  }
+  .hello-box {
+    font-size: 2rem;
+    margin-right: 2em;
   }
   .home-page h1 {
     font-size: 2.7rem;
     margin-top: 0.7em;
   }
-  .project-box p,
-  .about-text-box p,
-  .about-text-box span {
-    font-size: 1.3rem;
+  .home-page h2 {
+    font-size: 2rem;
+    margin-top: 0;
+  }
+  .home-page h3 {
+    font-size: 2rem;
+  }
+  .home-page p {
+    font-size: 1.5rem;
+  }
+  .button-box {
+    margin-top: 1.1em;
   }
   .button-box button {
     font-size: 1rem;
     padding: 1em 2.5em;
   }
+  .button-box .contact-btn {
+    margin-left: 1em;
+  }
   .project-box {
-    padding: 2em 2em;
+    padding: 2em;
+  }
+  .b-tool-box-skill div {
+    font-size: 2rem;
+  }
+  .b-tool-box div {
+    font-size: 1.5rem;
+  }
+  .s-tool-box span {
+    font-size: 1.3rem;
+  }
+  .project-link-button {
+    font-size: 1rem;
+    padding: 1em;
+  }
+  .project-link {
+    font-size: 1rem;
+  }
+
+  .social-media-box span {
+    font-size: 2rem;
+  }
+  .social-media-box h2 {
+    margin: 0;
+    margin-top: 1em;
+  }
+  .social-link {
+    font-size: 1.2rem;
+  }
+
+  .github,
+  .linkedin,
+  .instagram,
+  .gmail {
+    font-size: 3rem;
+  }
+  .b-tool-box-row {
+    margin-top: 0;
+  }
+  .b-tool-box-skill {
+    margin-top: 5em;
+  }
+  .social-media-box .row {
+    margin-top: 1em;
   }
 }
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
+  .navbar-nav .nav-link {
+    font-size: 1.2rem;
+  }
   .home-page {
     margin-top: 5em;
+  }
+  .hello-box {
+    font-size: 2rem;
   }
   .home-page h1 {
     font-size: 2rem;
     margin-top: 0.7em;
   }
-  .project-box p,
-  .about-text-box p,
-  .about-text-box span {
+  .home-page h2 {
+    font-size: 2rem;
+    /* margin-top: 2.3em; */
+  }
+  .home-page h3 {
+    font-size: 2rem;
+  }
+  .home-page p {
     font-size: 1.2rem;
+  }
+  .project-box {
+    padding: 2em 2em;
+  }
+  .button-box {
+    margin-top: 1.1em;
   }
   .button-box button {
     font-size: 1rem;
     padding: 1em 1.4em;
   }
-  .project-box {
-    padding: 2em 2em;
+  .button-box .contact-btn {
+    margin-left: 0.4em;
+  }
+  .b-tool-box-skill div {
+    font-size: 1.8rem;
+  }
+  .b-tool-box div {
+    font-size: 1.2rem;
+  }
+  .s-tool-box span {
+    font-size: 1.1rem;
+  }
+  .project-link-button {
+    font-size: 1rem;
+    padding: 0.4em;
+  }
+  .social-media-box span {
+    font-size: 1.5rem;
+  }
+  .social-media-box h2 {
+    margin: 0;
+    margin-top: 0.5em;
+  }
+  .social-link {
+    font-size: 1.2rem;
+  }
+  .project-link {
+    font-size: 1rem;
+  }
+  .github,
+  .linkedin,
+  .instagram,
+  .gmail {
+    font-size: 2rem;
   }
 }
 
@@ -400,11 +509,11 @@ body {
   .navbar-nav .nav-link {
     font-size: 1rem;
   }
-  .hello-box {
-    font-size: 1.5rem;
-  }
   .home-page {
     margin-top: 5em;
+  }
+  .hello-box {
+    font-size: 1.5rem;
   }
   .home-page h1 {
     font-size: 1.5rem;
@@ -412,33 +521,72 @@ body {
   }
   .home-page h2 {
     font-size: 1.5rem;
-    /* margin-top: 2.3em; */
+    margin-top: 1.5em;
   }
-  .project-box h3 {
+  .home-page h3 {
     font-size: 1.5rem;
   }
-  .project-box p,
-  .about-text-box p,
-  .about-text-box span {
+  .home-page p {
     font-size: 1rem;
+  }
+  .project-box {
+    padding: 2em 1em;
   }
   .button-box {
     margin-top: 0.5em;
   }
   .button-box button {
-    font-size: 0.7rem;
-    padding: 1em 1.1em;
+    font-size: 0.8rem;
+    padding: 1em;
   }
-  .project-box {
-    padding: 2em 1em;
+  .button-box .contact-btn {
+    margin-left: 0.4em;
+  }
+  .b-tool-box-skill div {
+    font-size: 1.5rem;
+  }
+  .dot {
+    display: none;
+  }
+  .b-tool-box div {
+    font-size: 0.9rem;
+  }
+  .s-tool-box span {
+    font-size: 0.8rem;
+  }
+  .project-link-button {
+    font-size: 0.7rem;
+    padding: 0.7em 0.8em;
   }
   .project-link {
-    font-size: 1.1rem;
+    font-size: 0.7rem;
   }
+  .social-media-box span {
+    font-size: 1.5rem;
+  }
+  .social-media-box h2 {
+    margin: 0;
+    margin-top: 0.5em;
+  }
+  .social-link {
+    font-size: 1rem;
+  }
+
   .github,
   .linkedin,
-  .instagram {
-    font-size: 2.5rem;
+  .instagram,
+  .gmail {
+    font-size: 1.5rem;
+  }
+
+  .b-tool-box-row {
+    margin-top: 0;
+  }
+  .b-tool-box-skill {
+    margin-top: 5em;
+  }
+  .social-media-box .row {
+    margin-top: 1em;
   }
 }
 
@@ -451,45 +599,85 @@ body {
     font-size: 1.4rem;
     margin-right: 2em;
   }
-
-  .home-page {
-    margin-top: 4em;
+  .dot {
+    display: none;
   }
   .home-page h1 {
     font-size: 1.5rem;
     margin-top: 0.5em;
   }
-  .home-page h2 {
-    font-size: 1.5rem;
-    margin-top: 1.5em;
-  }
-  .project-box h3 {
+  .home-page h3 {
     font-size: 1.5rem;
   }
-  .project-box p,
-  .about-text-box p,
-  .about-text-box span {
+  .home-page p {
     font-size: 1rem;
   }
   .button-box {
     margin-top: 0.5em;
   }
   .button-box button {
-    font-size: 0.7rem;
-    padding: 1em 1.4em;
+    font-size: 0.8rem;
+    padding: 1em;
+  }
+  .button-box .contact-btn {
+    margin-left: 0.5em;
   }
   .project-box {
     padding: 2em 1em;
   }
-  .project-link {
-    font-size: 1.1rem;
+  .b-tool-box-skill div {
+    font-size: 1.5rem;
+  }
+  .b-tool-box div {
+    font-size: 0.9rem;
   }
   .home-page {
-    padding: 0 2em;
+    margin-top: 3em;
+    padding: 0 1.8em;
+    /* jjjj  */
   }
+  .home-page h2 {
+    font-size: 1.3rem;
+    margin-top: 0.8em;
+    /* jjjj */
+  }
+  .b-tool-box-row {
+    margin-top: 0;
+    /* jjj */
+  }
+  .b-tool-box-skill {
+    margin-top: 5em;
+    /* jjj */
+  }
+  .social-media-box .row {
+    margin-top: 1em;
+    /* jjjjj */
+  }
+  .s-tool-box span {
+    font-size: 0.8rem;
+  }
+  .project-link-button {
+    font-size: 0.7rem;
+    padding: 0.5em;
+  }
+  .project-link {
+    font-size: 0.8rem;
+  }
+  .social-media-box span {
+    font-size: 1.5rem;
+  }
+  .social-media-box h2 {
+    margin: 0;
+    margin-top: 0.5em;
+  }
+  .social-link {
+    font-size: 1rem;
+  }
+
   .github,
   .linkedin,
-  .instagram {
-    font-size: 2rem;
+  .instagram,
+  .gmail {
+    font-size: 1.5rem;
   }
 }
