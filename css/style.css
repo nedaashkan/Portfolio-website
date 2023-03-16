@@ -371,6 +371,12 @@ body {
   margin-top: 5em;
   display: none;
 }
+#food-recipe-app-project {
+  display: none;
+}
+#coming-text {
+  color: red;
+}
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
   .navbar-nav .nav-link {
@@ -707,7 +713,7 @@ body {
     font-size: 1.5rem;
   }
   .b-tool-box div {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   .home-page {
     margin-top: 3em;
