@@ -377,6 +377,9 @@ body {
 #coming-text {
   color: red;
 }
+.portfolio-link {
+  text-decoration: none;
+}
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
   .navbar-nav .nav-link {
