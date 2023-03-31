@@ -371,12 +371,7 @@ body {
   margin-top: 5em;
   display: none;
 }
-#food-recipe-app-project {
-  display: none;
-}
-#coming-text {
-  color: red;
-}
+
 .portfolio-link {
   text-decoration: none;
 }
